@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Screens.ProfileActivity">
+
+    <ImageView
+        android:id="@+id/profile_cover"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_180sdp"
+        android:src="@drawable/cover_img"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_img"
+        android:layout_width="@dimen/_140sdp"
+        android:layout_height="@dimen/_140sdp"
+        android:src="@drawable/person_or_avatar"
+        android:layout_marginTop="@dimen/_110sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="@dimen/_20ssp"
+        android:textColor="@color/black"
+        android:text="Elmohandes Alaa"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        app:layout_constraintTop_toBottomOf="@id/profile_img"/>
+
+    <TextView
+        android:id="@+id/profile_bio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="software engineer and Android developer"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        app:layout_constraintTop_toBottomOf="@id/profile_name"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/profile_send_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_shape"
+        android:text="Send Chat Request"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_18ssp"
+        android:textAllCaps="false"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_50sdp"
+        android:layout_marginLeft="@dimen/_50sdp"
+        android:layout_marginRight="@dimen/_50sdp"
+        android:layout_marginEnd="@dimen/_50sdp"
+        app:layout_constraintTop_toBottomOf="@id/profile_bio"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/profile_request_decline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_shape"
+        android:text="Remove Friend Request"
+        android:visibility="invisible"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_18ssp"
+        android:textAllCaps="false"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_50sdp"
+        android:layout_marginLeft="@dimen/_50sdp"
+        android:layout_marginRight="@dimen/_50sdp"
+        android:layout_marginEnd="@dimen/_50sdp"
+        app:layout_constraintTop_toBottomOf="@id/profile_send_message"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

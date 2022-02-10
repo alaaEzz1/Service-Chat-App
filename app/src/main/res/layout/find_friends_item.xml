@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_4sdp">
+
+    <LinearLayout
+        android:id="@+id/friends_item_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/friends_item_img"
+            android:layout_width="@dimen/_55sdp"
+            android:layout_height="@dimen/_55sdp"
+            android:layout_margin="@dimen/_8sdp"
+            android:src="@drawable/person_or_avatar" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/friends_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:text="Alaa Ahmed"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/friends_item_bio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:text="software Engineer"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/friends_item_online"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:visibility="invisible"
+        android:src="@drawable/ic_online" />
+
+    <LinearLayout
+        android:id="@+id/friend_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/friends_item_linear">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/friends_accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_700"
+            android:visibility="gone"
+            android:text="@string/accept_chat"
+            android:textSize="@dimen/_16ssp"
+            android:padding="@dimen/_8sdp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/friends_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/red"
+            android:visibility="gone"
+            android:text="@string/cancel_chat"
+            android:textSize="@dimen/_16ssp"
+            android:padding="@dimen/_8sdp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginLeft="@dimen/_8sdp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        android:layout_below="@id/friend_buttons"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@color/purple_700" />
+
+
+</RelativeLayout>

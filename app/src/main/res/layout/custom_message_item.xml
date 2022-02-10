@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_8sdp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/custom_message_img"
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:src="@drawable/person_or_avatar" />
+
+    <TextView
+        android:id="@+id/message_receiver_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_toEndOf="@id/custom_message_img"
+        android:layout_toRightOf="@id/custom_message_img"
+        android:background="@drawable/receiver_message"
+        android:padding="@dimen/_8sdp"
+        android:text="Receiver Text Here"
+        android:textColor="@color/purple_700"
+        android:textSize="@dimen/_13ssp" />
+
+    <TextView
+        android:id="@+id/message_sender_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/sender_message"
+        android:padding="@dimen/_8sdp"
+        android:text="Sender Text Here"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13ssp" />
+
+    <ImageView
+        android:id="@+id/message_reciever_img"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:src="@drawable/person_or_avatar"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        android:layout_below="@id/custom_message_img"
+        android:layout_margin="@dimen/_8sdp"/>
+
+    <ImageView
+        android:id="@+id/message_sender_img"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:src="@drawable/person_or_avatar"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        android:layout_below="@id/message_sender_text"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/_8sdp"/>
+
+</RelativeLayout>

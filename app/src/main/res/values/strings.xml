@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Services Chat</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="chats">Chats</string>
+    <string name="status">Status</string>
+
+    <string name="groups">Groups</string>
+    <string name="write_your_message_here">write your message here...</string>
+    <string name="contacts">Contacts</string>
+    <string name="chat_requests">Requests</string>
+    <string name="email">Email</string>
+    <string name="password">password</string>
+    <string name="login">Login</string>
+    <string name="need_new_account">Need New Account</string>
+    <string name="login_with_phone_number">Login with phone number</string>
+    <string name="or_login_with_phone">or Login with phone</string>
+    <string name="cancel_chat">Cancel Chat</string>
+    <string name="accept_chat">Accept Chat</string>
+    <string name="confirm_password">confirm password</string>
+    <string name="full_name">Full Name</string>
+    <string name="create_new_account">create new account</string>
+    <string name="already_have_an_account">Already have an Account</string>
+    <string name="eng_alaa_ezz_eldin">Eng/ Alaa Ezz-eldin</string>
+    <string name="created_by">created by</string>
+    <string name="no_profile_image">No picture for this user</string>
+    <string name="i_want_to_connect_with_you">I want to connect with you</string>
+    <string name="you_already_sent_friend_request">you Already sent Friend Request.</string>
+    <string name="cancel_sent_request">Cancel Sent Request</string>
+    <string name="images">images</string>
+    <string name="pdf_files">PDF Files</string>
+    <string name="ms_word_files">MS Word Files</string>
+    <string name="write_your_message_first">write your message first...</string>
+    <string name="contact_deleted">Contact Deleted</string>
+    <string name="update_information">update information</string>
+    <string name="select_file">Select File</string>
+
+</resources>

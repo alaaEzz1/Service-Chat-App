@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Screens.PhoneActivity">
+
+    <ImageView
+        android:id="@+id/phone_img_cover"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_220sdp"
+        android:src="@drawable/phone"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <EditText
+        android:id="@+id/phone_et_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inputs"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:padding="@dimen/_8sdp"
+        android:textColor="@color/purple_700"
+        android:textSize="@dimen/_20ssp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:drawableStart="@mipmap/ic_phone_number"
+        android:drawableLeft="@mipmap/ic_phone_number"
+        android:inputType="phone"
+        app:layout_constraintTop_toBottomOf="@id/phone_img_cover"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/phone_btn_get"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_shape"
+        android:textSize="@dimen/_20ssp"
+        android:text="get verification code"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        app:layout_constraintTop_toBottomOf="@id/phone_et_number"/>
+
+    <EditText
+        android:id="@+id/phone_et_verify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inputs"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:padding="@dimen/_8sdp"
+        android:textColor="@color/purple_700"
+        android:textSize="@dimen/_20ssp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:inputType="number"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/phone_img_cover"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/phone_btn_verify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_shape"
+        android:textSize="@dimen/_20ssp"
+        android:text="verify"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/phone_et_verify"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

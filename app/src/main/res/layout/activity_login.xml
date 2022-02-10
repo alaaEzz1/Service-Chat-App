@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Screens.LoginActivity">
+
+    <ImageView
+        android:id="@+id/login_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_180sdp"
+        android:scaleType="fitXY"
+        android:src="@drawable/muslim_chat"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/login_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inputs"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@id/login_img"
+        android:drawableLeft="@mipmap/ic_email"
+        android:drawableStart="@mipmap/ic_email"
+        android:textColorHint="@color/purple_700"
+        android:textColor="@color/purple_700"
+        android:layout_margin="@dimen/_8sdp"
+        android:padding="@dimen/_3sdp"/>
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inputs"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@id/login_email"
+        android:drawableLeft="@mipmap/ic_email"
+        android:drawableStart="@mipmap/ic_password"
+        android:textColorHint="@color/purple_700"
+        android:textColor="@color/purple_700"
+        android:layout_margin="@dimen/_8sdp"
+        android:padding="@dimen/_3sdp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_shape"
+        android:text="@string/login"
+        android:textStyle="bold"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintTop_toBottomOf="@id/login_forget_password"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/_8sdp"
+        android:padding="@dimen/_3sdp"/>
+
+    <TextView
+        android:id="@+id/login_forget_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="forget My Password"
+        app:layout_constraintTop_toBottomOf="@id/login_password"
+        android:gravity="end"
+        android:textColor="@color/purple_700"
+        android:layout_margin="@dimen/_8sdp" />
+
+    <TextView
+        android:id="@+id/login_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/need_new_account"
+        android:textStyle="bold"
+        android:textSize="@dimen/_16sdp"
+        app:layout_constraintTop_toBottomOf="@id/login_login"
+        android:gravity="center"
+        android:textColor="@color/purple_700"
+        android:layout_margin="@dimen/_8sdp" />
+
+    <TextView
+        android:id="@+id/login_txt_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/or_login_with_phone"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintTop_toBottomOf="@id/login_register"
+        android:gravity="center"
+        android:textColor="@color/purple_700"
+        android:layout_margin="@dimen/_2sdp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_shape"
+        android:text="@string/login_with_phone_number"
+        android:textStyle="bold"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintTop_toBottomOf="@id/login_txt_phone"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/_8sdp"
+        android:padding="@dimen/_3sdp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

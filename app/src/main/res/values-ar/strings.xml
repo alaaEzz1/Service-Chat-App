@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="write_your_message_here">اكتب رسالتك هنا</string>
+    <string name="app_name">دردشة خدمات</string>
+    <string name="groups">المجموعات</string>
+    <string name="status">الحالة</string>
+    <string name="chats">المحادثات</string>
+    <string name="contacts">جهات الاتصال</string>
+    <string name="chat_requests">طلبات المراسلة</string>
+    <string name="email">البريد الالكتروني</string>
+    <string name="password">كلمة المرور</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="need_new_account">انشاء حساب جديد</string>
+    <string name="login_with_phone_number">تسجيل الدخول برقم الموبايل</string>
+    <string name="or_login_with_phone">او التسجيل من خلال رقم الموبايل</string>
+    <string name="cancel_chat">رفض طلب الصداقة</string>
+    <string name="accept_chat">قبول طلب الصداقة</string>
+    <string name="confirm_password">تأكيد كلمة المرور</string>
+    <string name="full_name">الاسم</string>
+    <string name="create_new_account">انشاء حساب جديد</string>
+    <string name="already_have_an_account">بالفعل امتلك حساب</string>
+    <string name="eng_alaa_ezz_eldin">المهندس علاء عزالدين</string>
+    <string name="created_by">تم بفضل الله بواسطة</string>
+    <string name="no_profile_image">لا يوجد صورة لهذا الحساب</string>
+    <string name="i_want_to_connect_with_you">ارسل اليك طلب صداقة</string>
+    <string name="you_already_sent_friend_request">انت بالفعل ارسلت طلب صداقة</string>
+    <string name="cancel_sent_request">الغاء ارسال طلب الصداقة</string>
+    <string name="images">صور</string>
+    <string name="pdf_files">ملفات بي دي اف</string>
+    <string name="ms_word_files">ملفات وورد</string>
+    <string name="write_your_message_first">write your message first...</string>
+    <string name="contact_deleted">Contact Deleted</string>
+    <string name="update_information">update information</string>
+</resources>
